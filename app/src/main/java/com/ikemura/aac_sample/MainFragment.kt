@@ -38,10 +38,10 @@ class MainFragment : Fragment() {
         super.onActivityCreated(savedInstanceState)
         val factory = ViewModelProvider.AndroidViewModelFactory.getInstance(activity!!.application)
         viewModel = ViewModelProviders.of(this, factory).get(MainViewModel::class.java)
-        viewModel.getName().observe(this, Observer {
+        viewModel.getRepo().observe(this, Observer {
             it ?: return@Observer
             Log.d(TAG, it)
-            name.text = "${getString(R.string.hello)} $it"
+            repo.text = "${getString(R.string.hello)} $it"
         })
     }
 
