@@ -1,8 +1,8 @@
 package com.ikemura.aac_sample
 
-import android.arch.lifecycle.LiveData
-import android.arch.lifecycle.MutableLiveData
-import android.arch.lifecycle.ViewModel
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
 import android.util.Log
 import com.ikemura.aac_sample.api.ApiClient
 import kotlinx.coroutines.experimental.launch
